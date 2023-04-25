@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/style.css"/>  
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>DASHBOARD</title>
+
+</head>
+<body>
+    
+<header>
+    <div class="info-header">
+        <div class="logo">
+            <h3 a href="/Index.html">  Bom de Mais  </h3></a>
+        </div>
+        <div class="icons-header">            
+             
+     </div>
+     </div>
+
+        
+
+     </div>     
+
+     </div>
+
+<div class='info-header'>    
+  <div style="align-items: center;" class="info-header">
+    <i class="fa-solid fa-envelope"></i>
+    <i class="fa-solid fa-bell"></i>   
+   
+
+    <img src="./img/Bom de Mais 2.png" alt="">
+
+</div>
+    
+
+
+</header>
+
+<!--Fim HEADER-->
+<section class="main">
+ <div class="sidebar">
+    <h3> Produtos </h3>
+    
+     <a class="sidebar-active"
+     a href="./Produtos/algemix.html"> Algemix <i class="fa-regular fa-user"></i></a>
+     <a href="./Produtos/Coberturas.html"> Coberturas <i class="fa-regular fa-user"></i></a>
+     <a href="./Produtos/Prack.html"> Prack </li><i class="fa-regular fa-user"></i></a>
+     <a href="./Produtos/Kuky.html"> Kuky <i class="fa-regular fa-user"></i></a>  
+     <br/> 
+    <hr>
+
+    <h3> Descartaveis </h3>
+    <a href="#">Copaza<i class="fa-regular fa-user"></i></a>
+    <a href="#">VeroCopo<i class="fa-regular fa-user"></i></a>
+    <a href="#">Total Plast<i class="fa-regular fa-user"></i></a>
+    <a href="#">Ultra<i class="fa-regular fa-user"></i></a>  
+    <br/> 
+   <hr>   
+
+   
+   <h3> Caminhão </h3>
+   <a href="#">Relatorio Diario<i class="fa-regular fa-user"></i></a>
+   <a href="#">Motorista<i class="fa-regular fa-user"></i></a>
+   <a href="#">Avaria<i class="fa-regular fa-user"></i></a>
+   <a href="#">Multa<i class="fa-regular fa-user"></i></a>  
+   <br/> 
+  <hr>   
+
+  <h3>  </h3>
+  <a href="#">Ferramentas<i class="fa-regular fa-user"></i></a>
+  <a href="#">Produtos<i class="fa-regular fa-user"></i></a>
+  <a href="#"><i class="fa-regular fa-user"></i></a>
+  <a href="#">Outros<i class="fa-regular fa-user"></i></a>  
+  <br/> 
+ <hr>   
+
+
+
+ </div>
+ <div class="content">
+    <div class="titulo-section">
+       <h2>Dashboard Sale</h2>
+       <hr>
+       <br> 
+        <i class="fa-brands fa-github">
+            <a href="https://github.com/Thart10"
+       target="_blank"> Financeiro/ 
+        </i></a>         
+       
+      
+    </div>
+    <div class="box-info">
+        <div style="background:linear-gradient(#fff,#c3c3b7,#9e08dffc ) ;"class="box-info-single">
+            <div class="info-text">
+                <h3>Total Sales</h3>
+                <p>R$1.000</p>               
+            </div>
+            <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+        <div style="background:linear-gradient(#fff,#c3c3b7,#9e08dffc ) ;"class="box-info-single">
+            <div class="info-text">
+                <h3>Total Sales</h3>
+                <p>R$1.000</p>               
+            </div>
+            <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+        <div style="background:linear-gradient( #fff,#c3c3b7,#9e08dffc ) ;"class="box-info-single">
+            <div class="info-text">
+                <h3>Total Sales</h3>
+                <p>R$1.000</p>               
+            </div>
+            <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+        <div style="background:linear-gradient(#fff,#c3c3b7,#9e08dffc ) ;"class="box-info-single">            
+            <div class="info-text">
+                <h3>Total Sales</h3>
+                <p>R$1.000</p>               
+            </div>
+            <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+    </div>
+
+    <div class="feed">
+        <div class="feed-single">
+            <div class="feed-text">
+                <i class="fa-regular fa-bell"></i>
+                <span>NOVO</span>
+            </div>
+            <div class="feed-time">
+                <h3>30 minutos</h3>
+            </div>
+    </div>
+            </div>
+
+            <!--Canvas-->
+          
+        <canvas id="grafico1"></canvas>
+    
+        <script>
+           
+  const ctx = document.getElementById('grafico1');
+
+  let valoresx=["Banana", "Chocolate branco", "Holanda","Thiago","Thiago",
+  "Holanda","Thiago","Thiago",
+  ]
+  let valores=[10,20,30,40,50,60,]
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: valoresx,
+      datasets: [{
+        label: 'Algemix',
+        data: valores,
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+<article>
+<div class="resume">
+    <div>
+      Entradas: R$
+      <span class="incomes">0.00</span>
+    </div>
+    <div>
+      Saídas: R$
+      <span class="expenses">0.00</span>
+    </div>
+    <div>
+      Total: R$
+      <span class="total">0.00</span>
+    </div>
+  </div>
+  <div class="newItem">
+    <div class="divDesc">
+      <label for="desc">Descrição</label>
+      <input type="text" id="desc" />
+    </div>
+    <div class="divAmount">
+      <label for="amount">Valor</label>
+      <input type="number" id="amount" />
+    </div>
+    <div class="divType">
+      <label for="type">Tipo</label>
+      <select id="type">
+        <option>Entrada</option>
+        <option>Saída</option>
+      </select>
+    </div>
+    <button id="btnNew">Incluir</button>
+  </div>
+  <div class="divTable">
+    <table>
+      <thead>
+        <tr>
+          <th>Descrição</th>
+          <th class="columnAmount">Valor</th>
+          <th class="columnType">Tipo</th>
+          <th class="columnAction"></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+</article>
+</section>
+
+<script src="./search.js"></script>
+
+
+</body>
+</html>
